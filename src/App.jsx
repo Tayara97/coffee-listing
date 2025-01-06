@@ -12,7 +12,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => setCoffeeData(data));
   }, []);
-  console.log(coffeeData);
   const cards = coffeeData.map((data) => {
     return (
       <Card
